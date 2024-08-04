@@ -39,7 +39,7 @@ jobs:
 
     - name: Build Docker Image
       run: |
-        docker build -t shirishagoudkalal/taskmaster:latest
+        docker build -t shirishagoudkalal/taskmaster:latest .
       
     - name: Trivy image Scan
       run: trivy image --format table -o fs.html shirishagoudkalal/taskmaster:latest
